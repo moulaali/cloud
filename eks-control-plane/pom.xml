@@ -11,8 +11,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.4</version> <!-- Use the latest stable version of Spring Boot -->
-        <relativePath/> <!-- Lookup parent from the Maven repository -->
+        <version>3.1.4</version>
+        <relativePath/>
     </parent>
 
     <properties>
@@ -35,7 +35,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Maven Jar Plugin to include Main-Class in MANIFEST.MF -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -43,8 +42,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.eksdemo.EksSpringBootApplication
-                            </mainClass> <!-- Replace with your main class -->
+                            <mainClass>com.eksdemo.EksSpringBootApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -93,7 +91,6 @@
             </exclusions>
         </dependency>
 
-        <!-- Spring Boot DevTools (optional for development) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
