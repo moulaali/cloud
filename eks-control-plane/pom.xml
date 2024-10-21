@@ -12,7 +12,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.4</version> <!-- Use the latest stable version of Spring Boot -->
-        <relativePath /> <!-- Lookup parent from the Maven repository -->
+        <relativePath/> <!-- Lookup parent from the Maven repository -->
     </parent>
 
     <properties>
@@ -43,7 +43,8 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.eksdemo.EksSpringBootApplication</mainClass> <!-- Replace with your main class -->
+                            <mainClass>com.eksdemo.EksSpringBootApplication
+                            </mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                 </configuration>
@@ -70,7 +71,6 @@
             <version>2.20.37</version>
         </dependency>
 
-        <!-- Spring Boot Web dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -82,7 +82,6 @@
             </exclusions>
         </dependency>
 
-        <!-- Explicitly add JUL-to-SLF4J bridge (to remove SLF4J impact) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -94,14 +93,11 @@
             </exclusions>
         </dependency>
 
-
-
         <!-- Spring Boot DevTools (optional for development) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-
     </dependencies>
 </project>
